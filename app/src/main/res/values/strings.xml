@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="challenge_Title">Challenge</string>
+    <string name="challenge_text">Do you want challenge this player to a chess match?</string>
+    <string name="confirm">Yes</string>
+    <string name="deny">No</string>
+    <string name="finish">Finish</string>
+    <string name="username">username</string>
+    <string name="elo_number">elo number</string>
+    <string name="name_title">Hello there, welcome to Chess Club. Enter a username below</string>
+    <string name="your_name">your name here</string>
+    <string name="doneText">done</string>
+    <string name="result_title">Result</string>
+    <string name="result_text">so What was the outcome?</string>
+    <string name="opponent">I lost</string>
+    <string name="me">I won</string>
+    <string name="loss_title">You Lost!</string>
+    <string name="loss_text">your new ELO ranking is now:</string>
+    <string name="accept">ok</string>
+    <string name="win_title">You Won!</string>
+    <string name="host">Host</string>
+    <string name="client">client</string>
+    <string name="discovery_fail">Discovery failed to start</string>
+    <string name="discovery_start">Discovery Started</string>
+    <string name="discover">discover</string>
+    <string name="connection_status">Connection Status</string>
+
+</resources>
