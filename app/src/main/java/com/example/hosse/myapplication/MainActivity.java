@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     Dialog connectDialog;
     Dialog versusDialog;
     Dialog resultDialog;
-    static String choice = null;
+    static String choice = "";
     static int elo;
 
     Dialog getNameDialog;
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
     public void load (File name, boolean exist){
 
         FileInputStream fileInputStream = null;
-        FileOutputStream fileOutputStream = null;
+        FileOutputStream fileOutputStream;
         try {
             if(exist) {
                 String user = "";
@@ -170,12 +170,13 @@ public class MainActivity extends AppCompatActivity {
                             MyRunnable toRun = new MyRunnable(message);
                             Thread t = new Thread(toRun);
                             t.start();
-                            while (isCheating) {
+                            while (t.isAlive());
+                            if (isCheating) {
                                 openResultDialog();
                                 Toast.makeText(getApplicationContext(), "you said the same thing", Toast.LENGTH_SHORT).show();
 
                             }
-                            while(whodis.equals("null"));
+                            while(whodis.equals(""));
                             resultDialog.dismiss();
                             if(whodis.equals("me")){
                                 openWinDialog(elo, new Calculator().eloCalculator(elo,opponentElo,1));
@@ -258,7 +259,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    String whodis = "null";
+    String whodis = "";
 
     public class MyRunnable implements Runnable {
 
@@ -270,7 +271,7 @@ public class MainActivity extends AppCompatActivity {
         }
         public void run() {
 
-            while(choice.equals(null));
+            while(choice.equals(""));
             while(opponentAnswer.equals(choice)){
                 isCheating = true;
             }
