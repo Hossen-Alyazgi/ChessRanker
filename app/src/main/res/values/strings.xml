@@ -15,14 +15,14 @@
     <string name="opponent">I lost</string>
     <string name="me">I won</string>
     <string name="loss_title">You Lost!</string>
-    <string name="loss_text">your new ELO ranking is now:</string>
+    <string name="loss_text">your new ELO ranking is now</string>
     <string name="accept">ok</string>
     <string name="win_title">You Won!</string>
-    <string name="host">Host</string>
-    <string name="client">client</string>
+    <string name="host">connected</string>
+    <string name="client">connected</string>
     <string name="discovery_fail">Discovery failed to start</string>
     <string name="discovery_start">Discovery Started</string>
-    <string name="discover">discover</string>
+    <string name="discover">discover opponents</string>
     <string name="connection_status">Connection Status</string>
 
 </resources>

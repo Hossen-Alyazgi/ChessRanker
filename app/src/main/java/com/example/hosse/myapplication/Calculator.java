@@ -2,10 +2,10 @@ package com.example.hosse.myapplication;
 
 public class Calculator {
 
-    public int eloCalculator(int userElo,int opponentElo, int isOne){
-        int expecteduser = ((1)/(1+10^((opponentElo-userElo)/400)));
+    public int eloCalculator(double userElo,double opponentElo, int isOne){
+        double expecteduser = ((1) / (1 + Math.pow(10,((opponentElo - userElo) / 400.0))));
 
-        int updatedScore =(userElo + 32*(isOne-expecteduser));
+        int updatedScore = (int) (userElo + 32*(isOne-expecteduser));
         return updatedScore;
 
 

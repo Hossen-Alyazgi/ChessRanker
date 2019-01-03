@@ -49,32 +49,36 @@
                     android:layout_marginRight="20dp"
                     android:src="@drawable/crown"
                     android:layout_gravity="center_horizontal"/>
+
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
                         android:layout_marginBottom="20dp"
                         android:text="@string/loss_text"
-                        android:textColor="#ffffff"
                         android:textAlignment="center"
-                        android:textSize="20sp"/>
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/eloUpdate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
                         android:layout_marginBottom="20dp"
                         android:text=""
-                        android:textColor="#ffffff"
                         android:textAlignment="center"
+                        android:textColor="#ffffff"
                         android:textSize="20sp" />
 
 
