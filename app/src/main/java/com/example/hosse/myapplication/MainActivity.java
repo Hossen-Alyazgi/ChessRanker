@@ -166,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
                         openResultDialog();
 
                         break;
+
                     case '5':
                         ((TextView) versusDialog.findViewById(R.id.opponent_elo_number)).setText(message);
                         opponentElo = Integer.parseInt(message);
@@ -242,6 +243,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     public void openResultDialog() {
         resultDialog.setContentView(R.layout.result_dialog);
         Objects.requireNonNull(resultDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -251,6 +253,7 @@ public class MainActivity extends AppCompatActivity {
         (resultDialog.findViewById(R.id.opponnentbtn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 resultDialog.dismiss();
                 openLoseDialog(elo,new Calculator().eloCalculator(elo,opponentElo,0));
             }
