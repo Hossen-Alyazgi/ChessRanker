@@ -24,5 +24,7 @@
     <string name="discovery_start">Discovery Started</string>
     <string name="discover">discover opponents</string>
     <string name="connection_status">Connection Status</string>
+    <string name="back">back</string>
+    <string name="next">next</string>
 
 </resources>

@@ -14,6 +14,10 @@
     <color name="colorbluedark">#144c52</color>
     <color name="deeporange">#d34c26</color>
     <color name="darkpurple">#373640</color>
+    <color name="introcolorPrimary">#262938</color>
+    <color name="introcolorPrimaryDark">#181A24</color>
+    <color name="introcolorAccent">#FF4081</color>
+    <color name="introcolorTransparentWhite">#cccccc</color>
 
 
 </resources>
